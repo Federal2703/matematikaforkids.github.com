@@ -1,0 +1,39 @@
+.primer {
+
+    padding-left: 50px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.img-conteiner {
+    float: right;
+    padding: 5px;
+    border-style: solid;
+    border-width: 3px;
+    margin-left: 5px;
+
+}
+
+.slog {
+    max-width: 300px;
+}
+
+.slogen {
+    max-width: 300px;
+}
+
+.vyc {
+    max-width: 300px;
+}
+
+.vychet {
+    max-width: 300px;
+}
+
+.del {
+    max-width: 300px;
+}
+
+.mnog {
+    max-width: 300px;
+}
