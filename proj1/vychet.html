@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вычитание</title>
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="static/styles/slog.css">
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="header">
+            <div>
+                <img src="static/images/logo.jpg">
+
+            </div>
+            <ol>
+                <li><a href="C:\Users\ekate\OneDrive\Рабочий стол\myprojects\proj1\slog.html" target="_blank">Задачи на
+                    сложение</a> </li></br>
+            <li><a href="C:\Users\ekate\OneDrive\Рабочий стол\myprojects\proj1\vychet.html" target="_blank">Задачи
+                    на вычитание</a> </li></br>
+            <li><a href="C:\Users\ekate\OneDrive\Рабочий стол\myprojects\proj1\mnogdel.html" target="_blank">Задачи
+                    на умножение и деление</a> </li></br>
+
+
+            </ol>
+
+            <ol>
+                <li><a href="https://www.youtube.com/watch?v=KsNIg-p3OSY&t=90s" target="_blank">Видеоурок по сложению и вычитанию</a> </li></br>
+                <li><a href="https://www.youtube.com/watch?v=dp-sjK81cl0" target="_blank"> Учимся считать до 10</a></li></br>
+                <li><a href="https://www.youtube.com/watch?v=yNUOpGBVwTY" target="_blank"> Учимся считать до 20</a></li></br>
+
+            </ol>
+
+        </div>
+        <div class="section">
+
+
+            <div class="nav-cont">
+
+                <nav>
+                    <ul>
+                        <li><a href="C:\Users\ekate\OneDrive\Рабочий стол\myprojects\proj1\index.html">Главная</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            <div class="img-conteiner">
+                <div>
+                    <img class="vyc" src="static/images/vyc.jpg">
+                    <img class="vychet" src="static/images/vychet.jpg">
+                </div>
+            </div>
+
+            <div class="primer">
+                <p>У домика утром два зайца сидели<br>
+                    И дружно веселую песенку пели.<br>
+                    Один убежал, а второй вслед глядит.<br>
+                    Сколько у домика зайцев сидит?
+                    <br><input type="text" id="z_1">
+                </p>
+                <p> У Карабаса Барабаса было 10 кукол. В вечернем спектакле <br>
+                    2 куклы не участвовали. Сколько кукол<br>
+                    принимали участие в этом спектакле?<br> <input type="text" id="z_2"></p>
+
+                <p> На тарелочке 7 слив.<br>
+                    Вид их очень уж красив!<br>
+                    Съел 5 слив братишка Павел.<br>
+                    Сколько мальчик слив оставил?<br><input type="text" id="z_3"></p>
+
+                <p> В вагоне ехало 9 человек. 2 человека на ближайшей станции вышли. <br>
+                    Сколько человек продолжили путь в этом вагоне?<br><input type="text" id="z_4"> </p>
+
+                <p> В очереди к билетной кассе метро стояло 10 человек.<br>
+                    9 человек купили билеты и ушли. Сколько человек<br>
+                    осталось возле кассы?<br><input type="text" id="z_5"> </p>
+
+                <p>В зоомагазине продавались 6 попугаев.<br>
+                    К концу дня 5 попугаев купили.<br>
+                    Сколько попугаев осталось ждать своего хозяина?<br><input type="text" id="z_6"></p>
+
+
+                <button onclick="proverit();">Проверить</button>
+                <div id="rezultat"></div>
+                <script>
+                    function proverit() {
+                        pr_otv_zadachi_1 = 1;
+                        pr_otv_zadachi_2 = 8;
+                        pr_otv_zadachi_3 = 2;
+                        pr_otv_zadachi_4 = 7;
+                        pr_otv_zadachi_5 = 1;
+                        pr_otv_zadachi_6 = 1;
+                        otv_uch_1 = document.getElementById('z_1').value;
+                        otv_uch_2 = document.getElementById('z_2').value;
+                        otv_uch_3 = document.getElementById('z_3').value;
+                        otv_uch_4 = document.getElementById('z_4').value;
+                        otv_uch_5 = document.getElementById('z_5').value;
+                        otv_uch_6 = document.getElementById('z_6').value;
+
+                        ball = 0;
+                        if (otv_uch_1 == pr_otv_zadachi_1) {
+                            ball += 1;
+                        }
+                        if (otv_uch_2 == pr_otv_zadachi_2) {
+                            ball += 1;
+                        }
+                        if (otv_uch_3 == pr_otv_zadachi_3) {
+                            ball += 1;
+                        }
+                        if (otv_uch_4 == pr_otv_zadachi_4) {
+                            ball += 1;
+                        }
+                        if (otv_uch_5 == pr_otv_zadachi_5) {
+                            ball += 1;
+                        }
+                        if (otv_uch_6 == pr_otv_zadachi_6) {
+                            ball += 1;
+                        }
+
+                        vsego_zadach = 6;
+                        procent_vip = ball / vsego_zadach * 100;
+                        document.getElementById('rezultat').innerHTML = "Задания выполнены верно на " + procent_vip + "%.";
+                    }
+                </script>
+            </div>
+
+
+</body>
+
+</html>

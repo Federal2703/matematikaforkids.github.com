@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Умножение,деление</title>
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="static/styles/slog.css">
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="header">
+            <div>
+                <img src="static/images/logo.jpg">
+
+            </div>
+            <ol>
+                <li><a href="C:\Users\ekate\OneDrive\Рабочий стол\myprojects\proj1\slog.html" target="_blank">Задачи на
+                    сложение</a> </li></br>
+            <li><a href="C:\Users\ekate\OneDrive\Рабочий стол\myprojects\proj1\vychet.html" target="_blank">Задачи
+                    на вычитание</a> </li></br>
+            <li><a href="C:\Users\ekate\OneDrive\Рабочий стол\myprojects\proj1\mnogdel.html" target="_blank">Задачи
+                    на умножение и деление</a> </li></br>
+
+
+            </ol>
+
+            <ol>
+                <li><a href="https://www.youtube.com/watch?v=KsNIg-p3OSY&t=90s" target="_blank">Видеоурок по сложению и вычитанию</a> </li></br>
+                <li><a href="https://www.youtube.com/watch?v=dp-sjK81cl0" target="_blank"> Учимся считать до 10</a></li></br>
+                <li><a href="https://www.youtube.com/watch?v=yNUOpGBVwTY" target="_blank"> Учимся считать до 20</a></li></br>
+
+            </ol>
+
+        </div>
+        <div class="section">
+
+
+            <div class="nav-cont">
+
+                <nav>
+                    <ul>
+                        <li><a href="C:\Users\ekate\OneDrive\Рабочий стол\myprojects\proj1\index.html">Главная</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            <div class="img-conteiner">
+                <div>
+                    <img class="del" src="static/images/del.jpg">
+                    <img class="mnog" src="static/images/mnog.jpg">
+                </div>
+            </div>
+
+            <div class="primer">
+                <p>На поляне 6 маслят, блестя шапками стоят.<br>
+                    Подбежали 2 ежа, грибы делят не спеша,<br>
+                    Чтобы ежикам не драться, помоги им разобраться.<br>
+                    Помири скорее их, подели 6 на двоих.<br>
+                    <br><input type="text" id="z_1">
+                </p>
+                <p> Бабушка купила в магазине 8 карасей, половину из них пожарила на обед.
+                    Сколько карасей осталось?<br>
+                    <br> <input type="text" id="z_2">
+                </p>
+
+                <p>Мы ходили в магазины и купили апельсины<br>
+                    10 штук по 2 положим.<br>
+                    Скольких угостить мы можем?<br><input type="text" id="z_3"></p>
+
+                <p>Папа – заяц в сад зашел,<br>
+                    20 спелых груш нашел.<br>
+                    Разделил он их по 5,<br>
+                    Сколько деток – то, зайчат?<br><input type="text" id="z_4"> </p>
+
+                <p> В муравейнике мурашки<br>
+                    Шили к празднику рубашки.<br>
+                    Одному мурашке в руки<br>
+                    Нужно сшить четыре штуки,<br>
+                    Сколько же семи мурашкам<br>
+                    Надо сшить всего рубашек?<br><input type="text" id="z_5"> </p>
+
+                <p>Хомячок по полю шёл,<br>
+                    9 зёрен он нашёл.<br>
+                    Посмотрел – к нему спешат<br>
+                    Трое маленьких мышат.<br>
+                    Возле них остановился<br>
+                    И находкой поделился.<br>
+                    9 зёрен на троих<br>
+                    Разделил он в тот же миг.<br>
+                    Сколько зёрен получил каждый мышонок?<br>
+                    <br><input type="text" id="z_6">
+                </p>
+
+
+                <button onclick="proverit();">Проверить</button>
+                <div id="rezultat"></div>
+                <script>
+                    function proverit() {
+                        pr_otv_zadachi_1 = 3;
+                        pr_otv_zadachi_2 = 4;
+                        pr_otv_zadachi_3 = 5
+                        pr_otv_zadachi_4 = 4;
+                        pr_otv_zadachi_5 = 28;
+                        pr_otv_zadachi_6 = 3;
+                        otv_uch_1 = document.getElementById('z_1').value;
+                        otv_uch_2 = document.getElementById('z_2').value;
+                        otv_uch_3 = document.getElementById('z_3').value;
+                        otv_uch_4 = document.getElementById('z_4').value;
+                        otv_uch_5 = document.getElementById('z_5').value;
+                        otv_uch_6 = document.getElementById('z_6').value;
+
+                        ball = 0;
+                        if (otv_uch_1 == pr_otv_zadachi_1) {
+                            ball += 1;
+                        }
+                        if (otv_uch_2 == pr_otv_zadachi_2) {
+                            ball += 1;
+                        }
+                        if (otv_uch_3 == pr_otv_zadachi_3) {
+                            ball += 1;
+                        }
+                        if (otv_uch_4 == pr_otv_zadachi_4) {
+                            ball += 1;
+                        }
+                        if (otv_uch_5 == pr_otv_zadachi_5) {
+                            ball += 1;
+                        }
+                        if (otv_uch_6 == pr_otv_zadachi_6) {
+                            ball += 1;
+                        }
+
+                        vsego_zadach = 6;
+                        procent_vip = ball / vsego_zadach * 100;
+                        document.getElementById('rezultat').innerHTML = "Задания выполнены верно на " + procent_vip + "%.";
+                    }
+                </script>
+            </div>
+
+
+</body>
+
+</html>
